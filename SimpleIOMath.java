@@ -4,7 +4,6 @@ import java.util.Scanner;
  * @version September 27 2021
  * @author Meghan Phu
  */
-
 public class SimpleIOMath {
     private String name;
     private int age;
@@ -18,7 +17,6 @@ public class SimpleIOMath {
         return num;
     }
 
-
         public void promptUser() {
         Scanner in = new Scanner(System.in);
         System.out.print("Question 1: What is your name? ");
@@ -30,17 +28,16 @@ public class SimpleIOMath {
         System.out.print("Question 3: What's your favorite number? ");
         // program asks user their favorite color
         favNumber = in.nextInt();
-
         }
 
         public void printInfo() {
         System.out.println("Your name is: " + name);
         System.out.println("Your age is: " + age);
         System.out.println("At your next birthday, you will turn " + (age + 1));
-        System.out.println("The first prime factor of " + age + " is: " + smallestPrime());
+        System.out.println("The first prime factor of " + age + " is: " + smallestPrime(age));
         System.out.println("Your favorite number is: " + favNumber);
         System.out.println("Your favorite number squared is: " + (favNumber * favNumber));
-        // program prints out user's info + prime factor of age and fav number squared
+        // program prints out user's info + prime factor of age and fav number squared using smallestPrime()
         }
 
 
